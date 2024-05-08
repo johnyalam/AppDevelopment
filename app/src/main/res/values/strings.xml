@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AppDevelopment</string>
+    <string name="app_message">This is a simple App development demo.</string>
+    <string name="splash_screen_title">Splash activity</string>
+    <string name="login">Login</string>
+    <string name="title">Title</string>
+    <string name="bellow_login_button">Bellow Login Button</string>
 </resources>
