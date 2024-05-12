@@ -6,6 +6,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import fi.dev.appdevelopment.R
+import fi.dev.kotlinlibrary.basic.VariableConcept
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val tvLoginButton = findViewById<TextView>(R.id.tv_login_button)
+
         tvLoginButton.setOnClickListener {
             Toast.makeText(this, "Start splash activity.", Toast.LENGTH_LONG).show()
 
@@ -23,7 +25,10 @@ class MainActivity : AppCompatActivity() {
 
         val tvTitle = findViewById<TextView>(R.id.tv_title)
         tvTitle.setOnClickListener {
-            Toast.makeText(this, "Title clicked.", Toast.LENGTH_LONG).show()
+            val variableConcept = VariableConcept()
+            variableConcept.setMessage("Title clicked.")
+
+            Toast.makeText(this, variableConcept.getMessage(), Toast.LENGTH_LONG).show()
         }
     }
 }
